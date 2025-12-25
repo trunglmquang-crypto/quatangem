@@ -76,6 +76,12 @@ function triggerExplosion() {
 
 // 6. Mediapipe Hand Tracking
 const videoElement = document.getElementById('input_video');
+videoElement.style.display = "block"; // Hiện camera để kiểm tra
+videoElement.style.position = "absolute";
+videoElement.style.top = "10px";
+videoElement.style.left = "10px";
+videoElement.style.width = "150px";
+videoElement.style.zIndex = "100";
 const hands = new Hands({
     locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`
 });
@@ -115,4 +121,5 @@ window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+
 });
