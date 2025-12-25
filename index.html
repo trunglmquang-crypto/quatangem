@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xmas Surprise - 2025</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <div class="ui-layer">
+        <h1 class="title">MERRY CHRISTMAS</h1>
+        <div class="button-group">
+            <button id="start-btn">🎄 GIÁNG SINH AN LÀNH - BẮT ĐẦU</button>
+            <p id="status">Vui lòng nhấn Bắt đầu để mở Camera</p>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="bg-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <video id="input_video" style="display:none"></video>
+    <script src="script.js"></script>
+</body>
+</html>
